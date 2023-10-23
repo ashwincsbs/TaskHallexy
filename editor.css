@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins',sans-serif;
+}
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #3e0df0;
+  overflow-x: hidden;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #f3e9e9;
+  display: block;
+}
+.sidenav a img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; /* Align buttons to the right */
+  padding: 10px;
+}
+
+.publish-button,
+.preview-button {
+  font-family: 'Poppins',sans-serif;
+  padding: 10px 20px; /* Add some padding to the buttons */
+  border: 4px;
+  color: rgb(12, 12, 12);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.publish-button {
+  background-color: #d2e61e;
+  margin: 5px;
+  border-radius: 12px;
+
+}
+
+.publish-button:hover {
+  background-color: #f4f8fa;
+  border: 4px;
+}
+
+.preview-button {
+  background-color: #f510cf;
+  margin: 5px;
+  border-radius: 12px;
+}
+
+.preview-button:hover {
+  background-color: #eceeec;
+}
+
+#form-builder {
+  display: flex;
+}
+
+#toolbox {
+  width: 150px;
+  min-height: 300px;
+  padding: 20px;
+  border: 5px solid #ccc;
+}
+
+#toolbox .draggable {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  cursor: move;
+}
+#form-preview {
+  padding: 250px;
+  border: 1px solid #505050;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 610px;
+  margin-left: calc(160px + 50px);
+}
+
+.down-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.button1,
+.button2 {
+  font-family: 'Poppins',sans-serif;
+  padding: 10px 20px;
+  border: none;
+  color: rgb(14, 14, 14);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button1 {
+  border-radius: 12px;
+  background-color: #ee1010;
+  margin: 5px;
+}
+
+.button1:hover {
+  background-color: #e8f1e9;
+}
+
+.button2 {
+  border-radius: 12px;
+  background-color: #08a72f;
+  margin: 5px;
+}
+
+.button2:hover {
+  background-color: #fcfdfd;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+    width: 250px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
